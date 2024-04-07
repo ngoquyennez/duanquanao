@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "222130241303",
+    "project_id": "duanquanao-162b9",
+    "storage_bucket": "duanquanao-162b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222130241303:android:3520373b443010cf26c152",
+        "android_client_info": {
+          "package_name": "com.example.demo_duanquanao"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzg6v0PwHZ1GW6X8kjxXrJ4XGGsxisB6I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
