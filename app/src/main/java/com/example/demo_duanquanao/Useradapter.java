@@ -43,7 +43,7 @@ public class Useradapter extends RecyclerView.Adapter<Useradapter.MyViewHolder> 
         holder.username.setText(user.username);
         holder.password.setText(user.password);
         holder.fullname.setText(user.fullname);
-        holder.imageView.setImageBitmap(convert64basetoImage(user.imageuser));
+
     }
 
     @Override
@@ -53,7 +53,7 @@ public class Useradapter extends RecyclerView.Adapter<Useradapter.MyViewHolder> 
     }
     public static  class MyViewHolder extends RecyclerView.ViewHolder{
         TextView username,password,fullname;
-        ImageView imageView;
+
         Button xoa,sua;
 
         public MyViewHolder(@NonNull View itemView) {
@@ -62,7 +62,7 @@ public class Useradapter extends RecyclerView.Adapter<Useradapter.MyViewHolder> 
             username = itemView.findViewById(R.id.username);
             password = itemView.findViewById(R.id.password);
             fullname = itemView.findViewById(R.id.fullname);
-            imageView = itemView.findViewById(R.id.image_user);
+
 
         }
     }

@@ -14,6 +14,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class Useradapter1 extends BaseAdapter {
+
     ArrayList<User> listuser;
     Context context;
 
@@ -46,17 +47,12 @@ public class Useradapter1 extends BaseAdapter {
         fullname = convertView.findViewById(R.id.fullname);
         username = convertView.findViewById(R.id.username);
         password = convertView.findViewById(R.id.password);
-        imageView = convertView.findViewById(R.id.image_user);
+
 
         User user =(User) getItem(position);
         fullname.setText(user.getFullname());
         username.setText(user.getUsername());
         password.setText(user.getPassword());
-        imageView.setImageBitmap(convert64basetoImage(user.getImageuser()));
         return convertView;
-    }
-    public Bitmap convert64basetoImage(String encodedImage) {
-        byte[] bytes = Base64.decode(encodedImage, Base64.DEFAULT);
-        return BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
     }
 }

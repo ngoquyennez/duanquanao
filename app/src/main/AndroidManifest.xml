@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BATTERY_STATS"
+        tools:ignore="ProtectedPermissions" />
 
     <application
         android:allowBackup="true"
@@ -17,9 +19,23 @@
         <activity
             android:name=".MainActivity2"
             android:exported="false" />
-        <activity
-            android:name=".MainActivity_demo"
-            android:exported="false" />
+
+<!--        <receiver-->
+<!--            android:name=".pinyeu"-->
+<!--            android:enabled="true"-->
+<!--            android:exported="true">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.BATTERY_LOW" />-->
+<!--                <action android:name="android.intent.action.BATTERY_OKAY" />-->
+<!--            </intent-filter>-->
+<!--        </receiver>-->
+        <receiver android:name=".pinyeu"
+            android:exported="true"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+            </intent-filter>
+        </receiver>
         <activity
             android:name=".Sign_in"
             android:exported="true">

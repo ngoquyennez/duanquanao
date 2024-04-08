@@ -1,6 +1,10 @@
 package com.example.demo_duanquanao;
 
 public class User {
+    String username;
+    String fullname;
+    String password;
+    String id;
     public String getUsername() {
         return username;
     }
@@ -25,29 +29,25 @@ public class User {
         this.password = password;
     }
 
-    public User(String username, String fullname, String password, String imageuser) {
+    public User(String username, String fullname, String password, String id) {
         this.username = username;
         this.fullname = fullname;
         this.password = password;
-        this.imageuser = imageuser;
+        this.id = id;
     }
-
     public User() {
 
     }
 
-    String username;
-    String fullname;
-    String password;
 
-    public String getImageuser() {
-        return imageuser;
+    public String getId() {
+        return id;
     }
 
-    public void setImageuser(String imageuser) {
-        this.imageuser = imageuser;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    String imageuser;
+
 
 }
