@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thông tin người dùng"
+        android:textSize="40dp"
+        android:gravity="center"
+        />
+    <EditText
+        android:id="@+id/edit_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Tên người dùng"
+        android:layout_margin="10dp"
+        />
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên tài khoản"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Mật khẩu"
+        android:layout_margin="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:gravity="center">
+
+        <FrameLayout
+            android:id="@+id/edit_image_layout"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_margin="25dp"
+            >
+            <ImageView
+                android:id="@+id/edit_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/ic_launcher_background"/>
+            <TextView
+                android:id="@+id/edit_chonanh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="Chọn Ảnh"
+                android:layout_gravity="center"
+
+                />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/edit_sua"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:text="Sửa"
+            android:layout_margin="25dp"/>
+
+        <Button
+            android:id="@+id/edit_xoa"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:text="Xóa"
+            android:layout_margin="25dp"
+            />
+    </LinearLayout>
+</LinearLayout>

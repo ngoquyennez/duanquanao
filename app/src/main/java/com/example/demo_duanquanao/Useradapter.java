@@ -54,10 +54,11 @@ public class Useradapter extends RecyclerView.Adapter<Useradapter.MyViewHolder> 
     public static  class MyViewHolder extends RecyclerView.ViewHolder{
         TextView username,password,fullname;
         ImageView imageView;
-//        Button xoa,sua;
+        Button xoa,sua;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
+
             username = itemView.findViewById(R.id.username);
             password = itemView.findViewById(R.id.password);
             fullname = itemView.findViewById(R.id.fullname);

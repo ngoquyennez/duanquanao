@@ -49,7 +49,7 @@ public class Sign_in extends AppCompatActivity {
                                 if(task.isSuccessful()&&task.getResult()!=null&&task.getResult().getDocuments().size()>0){
                                     binding.progressBar.setVisibility(View.INVISIBLE);
                                     showToast("Đăng nhập thành công!");
-                                    Intent i  = new Intent(Sign_in.this,MainActivity.class);
+                                    Intent i  = new Intent(Sign_in.this,MainActivity2.class);
                                     startActivity(i);
                                 }
                                 else{
